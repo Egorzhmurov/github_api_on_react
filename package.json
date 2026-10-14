@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "webpack",
+    "start": "webpack serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,9 +13,29 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "clean-webpack-plugin": "^4.0.0",
+    "@babel/core": "^8.0.7",
+    "@babel/preset-env": "^8.0.7",
+    "@babel/preset-react": "^8.0.1",
+    "babel-loader": "^10.1.1",
+    "css-loader": "^7.1.5",
     "html-webpack-plugin": "^5.6.8",
+    "less": "^4.9.1",
+    "less-loader": "^13.0.0",
+    "style-loader": "^4.0.0",
     "webpack": "^5.111.1",
-    "webpack-cli": "^7.2.3"
-  }
+    "webpack-cli": "^7.2.3",
+    "webpack-dev-server": "^6.0.0"
+  },
+  "dependencies": {
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Egorzhmurov/github_api_on_react.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Egorzhmurov/github_api_on_react/issues"
+  },
+  "homepage": "https://github.com/Egorzhmurov/github_api_on_react#readme"
 }
